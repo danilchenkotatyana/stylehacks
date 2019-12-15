@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	text-align: left;
+	background-color: $body-bg;
+	min-width: 320px;
+	overflow: auto;
+	height: 100vh;
+}
+* {
+	box-sizing: border-box;
+}
+:root {
+	font-size: 16px;
+}
+[id*=root] {
+	height: 100%;
+}
+.main-content {
+	//display: flex;
+	//flex-direction: column;
+	//justify-content: space-between;
+	position: relative;
+	//top: 160px;
+	//height: 100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	@include breakpoint(desktop, max) {
+
+	}
+	@include breakpoint(laptop, max) {
+
+	}
+	@include breakpoint(mobile, max) {
+		//padding-top: $header-padding;
+		//justify-content: flex-start;
+		//top: 0;
+
+	}
+	main {
+		overflow: auto;
+		position: relative;
+		//height: 100%;
+		//margin-top: 100px;
+		flex: 1;
+	}
+}

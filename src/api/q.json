@@ -1,0 +1,752 @@
+{
+  "filter": {
+  },
+  "user": {
+  },
+  "outfits": [
+    {
+      "id": 107868,
+      "created": "2019-12-02 12:15:39",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "It is cold today in Richardson.",
+      "description": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit.",
+      "description_weather": "Heat things up with this stunning combo.",
+      "description_products": "Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play.",
+      "description_style": "Your eclectic taste will show in this outfit. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 2723,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "bloggers_boyfriend",
+        "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+        "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "asian",
+        "product_type1": {
+          "id": 12,
+          "name": "Long Sleeve Shirt",
+          "parent_id": 9,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/12_Long_Sleeve_Shirt.png"
+        },
+        "product_type2": {
+          "id": 30,
+          "name": "Trench Coat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Developed for Army officers in the pre-WWI era, a trench coat is practical and meant to withstand rough weather. The best one is the most classic beige and looks straight out of Film Noir, something that Alain Delon or Humphrey Bogart would wear. A style that looks like you\u2019ve been wearing it for ages. Important rule\u2014do not buckle your belt; just tie a knot in the front or back to look effortless.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/30_Trench_Coat.png"
+        },
+        "product_type3": {
+          "id": 68,
+          "name": "Casual Pants",
+          "parent_id": 67,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/68_Casual_Pants.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "bloggers_boyfriend",
+          "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+          "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg"
+        }
+      },
+      "description_voice": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107868,
+      "created": "2019-12-02 12:15:39",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "It is cold today in Richardson.",
+      "description": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit.",
+      "description_weather": "Heat things up with this stunning combo.",
+      "description_products": "Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play.",
+      "description_style": "Your eclectic taste will show in this outfit. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 2723,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "bloggers_boyfriend",
+        "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+        "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "asian",
+        "product_type1": {
+          "id": 12,
+          "name": "Long Sleeve Shirt",
+          "parent_id": 9,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/12_Long_Sleeve_Shirt.png"
+        },
+        "product_type2": {
+          "id": 30,
+          "name": "Trench Coat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Developed for Army officers in the pre-WWI era, a trench coat is practical and meant to withstand rough weather. The best one is the most classic beige and looks straight out of Film Noir, something that Alain Delon or Humphrey Bogart would wear. A style that looks like you\u2019ve been wearing it for ages. Important rule\u2014do not buckle your belt; just tie a knot in the front or back to look effortless.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/30_Trench_Coat.png"
+        },
+        "product_type3": {
+          "id": 68,
+          "name": "Casual Pants",
+          "parent_id": 67,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/68_Casual_Pants.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "bloggers_boyfriend",
+          "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+          "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg"
+        }
+      },
+      "description_voice": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107868,
+      "created": "2019-12-02 12:15:39",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "It is cold today in Richardson.",
+      "description": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit.",
+      "description_weather": "Heat things up with this stunning combo.",
+      "description_products": "Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play.",
+      "description_style": "Your eclectic taste will show in this outfit. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 2723,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "bloggers_boyfriend",
+        "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+        "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "asian",
+        "product_type1": {
+          "id": 12,
+          "name": "Long Sleeve Shirt",
+          "parent_id": 9,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/12_Long_Sleeve_Shirt.png"
+        },
+        "product_type2": {
+          "id": 30,
+          "name": "Trench Coat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Developed for Army officers in the pre-WWI era, a trench coat is practical and meant to withstand rough weather. The best one is the most classic beige and looks straight out of Film Noir, something that Alain Delon or Humphrey Bogart would wear. A style that looks like you\u2019ve been wearing it for ages. Important rule\u2014do not buckle your belt; just tie a knot in the front or back to look effortless.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/30_Trench_Coat.png"
+        },
+        "product_type3": {
+          "id": 68,
+          "name": "Casual Pants",
+          "parent_id": 67,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/68_Casual_Pants.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "bloggers_boyfriend",
+          "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+          "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg"
+        }
+      },
+      "description_voice": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107868,
+      "created": "2019-12-02 12:15:39",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "It is cold today in Richardson.",
+      "description": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit.",
+      "description_weather": "Heat things up with this stunning combo.",
+      "description_products": "Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play.",
+      "description_style": "Your eclectic taste will show in this outfit. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 2723,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "bloggers_boyfriend",
+        "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+        "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "asian",
+        "product_type1": {
+          "id": 12,
+          "name": "Long Sleeve Shirt",
+          "parent_id": 9,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/12_Long_Sleeve_Shirt.png"
+        },
+        "product_type2": {
+          "id": 30,
+          "name": "Trench Coat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Developed for Army officers in the pre-WWI era, a trench coat is practical and meant to withstand rough weather. The best one is the most classic beige and looks straight out of Film Noir, something that Alain Delon or Humphrey Bogart would wear. A style that looks like you\u2019ve been wearing it for ages. Important rule\u2014do not buckle your belt; just tie a knot in the front or back to look effortless.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/30_Trench_Coat.png"
+        },
+        "product_type3": {
+          "id": 68,
+          "name": "Casual Pants",
+          "parent_id": 67,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/68_Casual_Pants.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "bloggers_boyfriend",
+          "source_url": "https://www.instagram.com/p/BK4c-dagMPh/?taken-by=bloggers_boyfriend",
+          "image_url": "https://storage.googleapis.com/maison-me-images/bloggers_boyfriend/14474114_1112545242166148_364588400684040192_n.jpg"
+        }
+      },
+      "description_voice": "Heat things up with this stunning combo. Long Sleeve Shirt and Trench Coat will give you superpowers. Urban kicks say I'm here to play. Your eclectic taste will show in this outfit."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/cocoandvera/10903729_596634530438223_1417342053_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    },
+    {
+      "id": 107869,
+      "created": "2019-12-02 12:18:04",
+      "user_id": "5dc2f59ab8ea2c000b3ce783",
+      "weather_tip": "Bundle up, buttercup, it's cold out!",
+      "description": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day.",
+      "description_weather": "Oh!",
+      "description_products": "Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best.",
+      "description_style": "It's the wear this & chill kind of day. ",
+      "is_sent": 0,
+      "outfit": {
+        "id": 4953,
+        "gender": "man",
+        "is_active": true,
+        "source_name": "tobiassikstrom",
+        "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+        "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg",
+        "hair": "brunette",
+        "skin_tone": "white",
+        "product_type1": {
+          "id": 26,
+          "name": "Overcoat",
+          "parent_id": 20,
+          "gender": "man",
+          "description": "Clean and simple, a classic overcoat in beige or gray is always on your side when you need to impress. It should be straight cut with a short slit in the back and pronounced lapels, nothing more, nothing less.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/26_Overcoat.png"
+        },
+        "product_type2": {
+          "id": 39,
+          "name": "Dark Jeans",
+          "parent_id": 34,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/39_Dark_Jeans.png"
+        },
+        "product_type3": {
+          "id": 62,
+          "name": "Plain T-Shirt",
+          "parent_id": 59,
+          "gender": "man",
+          "description": null,
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/62_Plain_T-Shirt.png"
+        },
+        "product_type4": {
+          "id": 88,
+          "name": "Low Top Sneakers",
+          "parent_id": 86,
+          "gender": "man",
+          "description": "The best sneakers are the low-top white leather ones. Think tennis style: clean-cut, flawless, and comfortable. Minimalist design will help you create effortlessly cool looks.",
+          "image_url": "https://storage.googleapis.com/maison-me-images/product_types/88_Low_Top_Sneakers.png"
+        },
+        "text_editorial": null,
+        "keywords": "",
+        "is_old_ontology": true,
+        "image": {
+          "source_name": "tobiassikstrom",
+          "source_url": "https://www.instagram.com/p/BBA-CUSqeUG/?taken-by=tobiassikstrom",
+          "image_url": "https://storage.googleapis.com/maison-me-images/data/uploads/instagram/blogtrendz/13556787_1732786566959284_1628161734_n.jpg"
+        }
+      },
+      "description_voice": "Oh! Overcoat and Dark Jeans mix like gin and tonic. Low top sneakers have so many designs, you can easily find one that suits you best. It's the wear this & chill kind of day."
+    }
+  ]
+}

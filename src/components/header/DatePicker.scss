@@ -1,0 +1,233 @@
+@import '../../styles/partials/variables';
+@import "../../styles/partials/mixins";
+
+.container {
+	display: inline-block;
+	font-size: 1rem;
+	@include breakpoint(laptop, max) {
+	}
+	@include breakpoint(mobile, max) {
+		font-size: .75rem;
+	}
+}
+
+.wrapper {
+	position: relative;
+
+	flex-direction: row;
+	//padding-bottom: 1em;
+
+	-webkit-user-select: none;
+
+	-moz-user-select: none;
+
+	-ms-user-select: none;
+
+	user-select: none;
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+.months {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+.month {
+	display: table;
+	//margin: 0 1em;
+	//margin-top: 1em;
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	-webkit-user-select: none;
+
+	-moz-user-select: none;
+
+	-ms-user-select: none;
+
+	user-select: none;
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+.navBar {
+	// TODO
+}
+
+[class*="navButton"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: auto;
+
+	display: inline-block;
+	margin-top: 2px;
+	width: 1.25em;
+	height: 1.25em;
+	background-position: center;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	color: #8B9898;
+	cursor: pointer;
+}
+
+[class*="navButton"]:hover {
+	opacity: 0.8;
+}
+
+.navButtonPrev {
+	margin-right: 0;
+	left: 0;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAVVJREFUWAnN2G0KgjAYwPHpGfRkaZeqvgQaK+hY3SUHrk1YzNLay/OiEFp92I+/Mp2F2Mh2lLISWnflFjzH263RQjzMZ19wgs73ez0o1WmtW+dgA01VxrE3p6l2GLsnBy1VYQOtVSEH/atCCgqpQgKKqYIOiq2CBkqtggLKqQIKgqgCBjpJ2Y5CdJ+zrT9A7HHSTA1dxUdHgzCqJIEwq0SDsKsEg6iqBIEoq/wEcVRZBXFV+QJxV5mBtlDFB5VjYTaGZ2sf4R9PM7U9ZU+lLuaetPP/5Die3ToO1+u+MKtHs06qODB2zBnI/jBd4MPQm1VkY79Tb18gB+C62FdBFsZR6yeIo1YQiLJWMIiqVjQIu1YSCLNWFgijVjYIuhYYCKoWKAiiFgoopxYaKLUWOii2FgkophYp6F3r42W5A9s9OcgNvva8xQaysKXlFytoqdYmQH6tF3toSUo0INq9AAAAAElFTkSuQmCC');
+}
+
+.navButtonNext {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAXRJREFUWAnN119ugjAcwPHWzJ1gnmxzB/BBE0n24m4xfNkTaOL7wOtsl3AXMMb+Vjaa1BG00N8fSEibPpAP3xAKKs2yjzTPH9RAjhEo9WzPr/Vm8zgE0+gXATAxxuxtqeJ9t5tIwv5AtQAApsfT6TPdbp+kUBcgVwvO51KqVhMkXKsVJFXrOkigVhCIs1Y4iKlWZxB1rX4gwlpRIIpa8SDkWmggrFq4IIRaJKCYWnSgnrXIQV1r8YD+1Vrn+bReagysIFfLABRt31v8oBu1xEBttfRbltmfjgEcWh9snUS2kNdBK6WN1vrOWxObWsz+fjxevsxmB1GQDfINWiev83nhaoiB/CoOU438oPrhXS0WpQ9xc1ZQWxWHqUYe0I0qrKCQKjygDlXIQV2r0IF6ViEBxVTBBSFUQQNhVYkHIVeJAtkNsbQ7c1LtzP6FsObhb2rCKv7NBIGoq4SDmKoEgTirXAcJVGkFSVVpgoSrXICGUMUH/QBZNSUy5XWUhwAAAABJRU5ErkJggg==');
+}
+
+.navButtonInteractionDisabled {
+	display: none;
+}
+
+.caption {
+	display: table-caption;
+	margin-bottom: 0.5em;
+	padding: 0 0.5em;
+	text-align: center;
+	font-size: 1.2rem;
+	@include breakpoint(mobile, max) {
+		font-size: 1rem;
+	}
+}
+
+.caption > div {
+	//font-weight: 500;
+	//font-size: 1.15em;
+}
+
+.weekdays {
+	display: table-header-group;
+	margin-top: 1em;
+}
+
+.weekdaysRow {
+	display: table-row;
+}
+
+.weekday {
+	display: table-cell;
+	padding: 0.5em;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.weekday abbr[title] {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.body {
+	display: table-row-group;
+}
+
+.week {
+	display: table-row;
+}
+
+.day {
+	display: table-cell;
+	padding: 0.5em;
+	border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+.weekNumber {
+	display: table-cell;
+	padding: 0.5em;
+	min-width: 1em;
+	border-right: 1px solid #EAECEC;
+	color: #8B9898;
+	vertical-align: middle;
+	text-align: right;
+	font-size: 0.75em;
+	cursor: pointer;
+}
+
+.interactionDisabled .day {
+	cursor: default;
+}
+
+.footer {
+	padding-top: 0.5em;
+}
+
+.todayButton {
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+	color: #4A90E2;
+	//font-size: 0.875em;
+	cursor: pointer;
+}
+
+/* Default modifiers */
+
+.today {
+	color: #D0021B;
+	font-weight: 700;
+}
+
+.outside {
+	color: rgba(31, 32, 65, 0.5);
+	cursor: default;
+}
+
+.disabled {
+	color: rgba(31, 32, 65, 0.5);
+	cursor: default;
+	/* background-color: #eff1f1; */
+}
+
+/* Example modifiers */
+
+.daySunday {
+	background-color: #F7F8F8;
+}
+
+.sunday:not(.today) {
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.selected:not(.disabled):not(.outside) {
+	position: relative;
+
+	background-color: #000;
+	color: #FFF;
+}
+
+.selected:not(.disabled):not(.outside):hover {
+	background-color: #000;
+}
+
+.dayPicker:not(.interactionDisabled)
+.day:not(.disabled):not(.selected):not(.outside):hover {
+	background-color: #F0F8FF;
+}

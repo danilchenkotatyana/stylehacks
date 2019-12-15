@@ -1,0 +1,342 @@
+@import '../../styles/partials/variables';
+@import "../../styles/partials/mixins";
+@import "./SelectLocationStyles";
+
+.header {
+	//position: fixed;
+	width: 100%;
+	background-color: $gray-100;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	@include breakpoint(desktop, max) {
+
+	}
+	@include breakpoint(laptop, max) {
+	}
+	@include breakpoint(mobile, max) {
+		padding-top: 3.4rem;
+		position: relative;
+		z-index: 3;
+	}
+	flex-shrink: 0;
+	&__filter-line {
+		background-color: $brown;
+		color: $black;
+		font-size: $font-size-header;
+		padding: $header-padding;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 4px 4px $shadow;
+
+		@include breakpoint(laptop, max) {
+			font-size: $font-size-middle;
+			//top: -50%;
+			position: relative;
+		}
+		@include breakpoint(mobile, max) {
+			padding: 0;
+			font-size: 1.3rem;
+			line-height: 1.8;
+		}
+	}
+	&__logo {
+		display: inline-block;
+		//position: sticky;
+		//width: 16.6875rem;
+		width: 20%;
+		height: 44px;
+		background: url("../../img/stylehacks.svg") no-repeat center transparent;
+		background-size: contain;
+		flex-shrink: 0;
+		margin-right: $header-padding;
+		//position: absolute;
+		//top: 30%;
+		//left: 34px;
+		@include breakpoint(mobile, max) {
+			width: 4rem;
+			height: 4rem;
+			background-image: url("../../img/logo.svg");
+			background-size: contain;
+			//position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			//top: -4rem;
+			top: .2rem;
+			z-index: 3;
+			position: fixed;
+		}
+	}
+	&__filter-text {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		@include breakpoint(mobile, max) {
+			padding: .3rem;
+		}
+	}
+	&__weather-line {
+		background-color: $gray-100;
+		color: $gray-900;
+		display: flex;
+		align-items: center;
+		padding: 0 1rem;
+		//position: relative;
+		min-height: 65px;
+		position: sticky;
+		top: 0;
+		z-index: -1;
+		@include breakpoint(laptop, max) {
+			min-height: 58px;
+		}
+		@include breakpoint(mobile, max) {
+			padding: 0 .5rem;
+			min-height: 50px;
+			top: 3rem;
+			position: sticky;
+			z-index: 2;
+			box-shadow: 0 -3rem 0 3rem $gray-100;
+		}
+	}
+	&__weather {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 1rem;
+		@include breakpoint(laptop, max) {
+			padding-right: 1rem;
+			padding-left: calc(40px + 2rem);
+		}
+		@include breakpoint(small-mobile, max) {
+			padding-left: 3rem;
+		}
+		&-values {
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			@include breakpoint(laptop, max) {
+				flex-direction: column;
+			}
+			@include breakpoint(mobile, max) {
+				width: 100%;
+			}
+		}
+		&-date {
+			font-size: 26px;
+			//width: 25%;
+			@include breakpoint(laptop, max) {
+				font-size: 15px;
+				width: 50%;
+			}
+			@include breakpoint(mobile, max) {
+				width: 100%;
+			}
+		}
+		&-temperature {
+			//width: 25%;
+			font-size: 26px;
+			@include breakpoint(laptop, max) {
+				width: 50%;
+				font-size: 18px;
+			}
+			@include breakpoint(mobile, max) {
+				width: 100%;
+				font-size: 15px;
+			}
+			span:not([class*=scale-disabled]) {
+				color: $inactive-color;
+				cursor: pointer;
+			}
+		}
+		&-description {
+			width: 40%;
+			@include breakpoint(mobile, max) {
+				display: none;
+			}
+		}
+		&-icon {
+			width: 70px;
+			height: 40px;
+			margin-right: 8px;
+			position: relative;
+			@include breakpoint(laptop, max) {
+				width: 50px;
+				position: absolute;
+				left: 2rem;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			@include breakpoint(small-mobile, max) {
+				left: .5rem;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				display: block;
+			}
+		}
+		&-scale-disabled {
+			color: $gray-900;
+		}
+	}
+	&__advice {
+		width: 50%;
+		font-size: 1.625rem;
+		border-left: 1px solid $border-color;
+		padding-left: 2rem;
+		margin: .5rem 0;
+		font-weight: bold;
+		@include breakpoint(laptop, max) {
+			font-size: $font-size-base;
+		}
+		@include breakpoint(mobile, max) {
+			border-left: none;
+			padding-left: 0;
+		}
+	}
+	.header__weather-line {
+		@include breakpoint(mobile, max) {
+			display: none;
+		}
+	}
+	&+.header__weather-line {
+		display: none;
+		@include breakpoint(mobile, max) {
+			display: flex;
+		}
+	}
+}
+
+.select {
+	display: inline-flex;
+	position: relative;
+	&__title {
+		background-color: $black;
+		box-shadow: 0 4px 4px $shadow;
+		border-radius: 3px;
+		border: none;
+		cursor: pointer;
+		color: $white;
+		padding: 0 2rem 0 .8rem;
+		position: relative;
+		line-height: 2.8rem;
+		max-width: 260px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+
+		@include breakpoint(laptop, max) {
+			line-height: 2rem;
+		}
+		@include breakpoint(mobile, max) {
+			padding-left: .3rem;
+		}
+	}
+	&__list {
+		position: absolute;
+		list-style: none;
+		text-align: left;
+		white-space: nowrap;
+		padding: .5rem;
+		margin: 0;
+		right: 0;
+		background-color: $background-transparent;
+		color: $black-transparent;
+		border-radius: 3px;
+		box-shadow: 0 4px 4px $shadow;
+		li {
+			cursor: pointer;
+			font-size: $font-size-middle;
+			&:hover,
+			&.active {
+				color: $black;
+			}
+		}
+	}
+
+	&__box {
+		position: absolute;
+		list-style: none;
+		text-align: left;
+		width: 294px;
+		padding: 1rem;
+		margin: 0;
+		right: 0;
+		background-color: $background-transparent;
+		border-radius: 3px;
+		box-shadow: 0 4px 4px $shadow;
+		font-size: 1.1rem;
+	}
+	&__input-box {
+		background-color: $white;
+		border-radius: 4px;
+		margin-top: 1rem;
+		padding: .5rem .5rem .5rem 3.3rem;
+		position: relative;
+		&:after {
+			content: '';
+			width: $font-size-header;
+			height: $font-size-header;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: .5rem;
+			background: url("../../img/location.svg") no-repeat transparent center;
+			background-size: contain;
+		}
+		input {
+			border: none;
+			outline: none;
+			font-size: $font-size-middle;
+
+		}
+	}
+	&__calendar {
+		position: absolute;
+		list-style: none;
+		text-align: left;
+		padding: 2rem;
+		margin: 0;
+		right: 0;
+		background-color: $background-transparent;
+		border-radius: 3px;
+		box-shadow: 0 4px 4px $shadow;
+		@include breakpoint(mobile, max) {
+			padding: 1rem;
+		}
+	}
+}
+
+.arrow {
+	width: 2rem;
+	height: 2rem;
+	display: inline;
+	&:after,
+	&:before {
+		display: block;
+		content: '';
+		width: 2px;
+		height: 11px;
+		position: absolute;
+		background-color: $white;
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+		right: 1rem;
+		@include breakpoint(laptop, max) {
+			height: 8px;
+			width: 1.5px;
+		}
+	}
+	&:before {
+		transform: translateY(-50%) rotate(-45deg);
+		right: 1.4rem;
+		@include breakpoint(laptop, max) {
+			right: 1.3rem;
+		}
+	}
+}
+//div[class$=indicatorContainer] {
+//	padding: 0;
+//}

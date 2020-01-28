@@ -27,10 +27,8 @@ body {
 	//justify-content: space-between;
 	position: relative;
 	//top: 160px;
-	//height: 100vh;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	@include breakpoint(desktop, max) {
 
 	}
@@ -41,11 +39,11 @@ body {
 		//padding-top: $header-padding;
 		//justify-content: flex-start;
 		//top: 0;
-
+		height: auto;
 	}
 	main {
-		overflow: auto;
-		position: relative;
+		// overflow: auto;
+		// position: relative;
 		//height: 100%;
 		//margin-top: 100px;
 		flex: 1;

@@ -1,13 +1,16 @@
-import React from "react";
+import React from 'react';
 import styles from './loader.scss';
 
-const Loader = ({active}) => {
-	//console.log('loader active', active);
+const Loader = ({ active, outfitsLoader }) => {
 	if (active) {
 		return (
-			<div className={styles.loader} key="loader"><div>Loading...</div></div>
+			<div className={styles.loader}><div>Loading...</div></div>
 		)
+	} else {
+		return (<div
+			className={styles.button}
+			onClick={outfitsLoader}>See More Outfits</div>
+		);
 	}
-	return <></>
 };
 export default Loader;

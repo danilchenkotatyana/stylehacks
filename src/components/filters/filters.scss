@@ -1,0 +1,95 @@
+@import '../../styles/partials/variables';
+@import "../../styles/partials/mixins";
+.filters {
+    background-color: rgba(204,199,185, .2);
+    margin-bottom: 1rem;
+    color: $black;
+    &__title {
+        margin: 0 2rem;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__button {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+        background: url(../../img/filter-icon.svg) no-repeat left transparent;
+        background-size: 25%;
+        cursor: pointer;
+    }
+    &__container {
+        color: $black;
+        padding: 0 45px 45px 45px;
+        @include breakpoint(mobile, max) {
+            padding: 0 3px 3px 3px;
+        }
+    }
+    &__table {
+        border: 1px solid $gray-700;
+        //display: grid;
+        //grid-template-columns: repeat(4, 1fr);
+
+        @include breakpoint(mobile, max) {
+            font-size: .75rem;
+        }
+        //min-width: calc(100vw - 1rem);
+        width: auto;
+        flex: 1;
+        display: grid;
+        border-collapse: collapse;
+        grid-template-columns:
+        minmax(75px, 1fr)
+        minmax(75px, 1fr)
+        minmax(75px, 1fr)
+        minmax(75px, 1fr)
+    }
+    &__close {
+        text-align: center;
+        text-decoration: underline;
+        font-size: $font-size-large;
+        cursor: pointer;
+
+        @include breakpoint(mobile, max) {
+            font-size: $font-size-middle;
+        }
+    }
+    &__column {
+        border-left: 1px solid $gray-700;
+
+        &:first-child {
+            border-left: none;
+        }
+        &-title {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        &-reset {
+            font-weight: normal;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .active {
+            background-color: $black;
+            color: $white;
+        }
+    }
+    &__row {
+        border-top: 1px solid $gray-700;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-reset {
+            cursor: pointer;
+            text-indent: -100000px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

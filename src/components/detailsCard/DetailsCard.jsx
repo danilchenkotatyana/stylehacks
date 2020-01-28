@@ -4,14 +4,19 @@ import { animateScroll } from 'react-scroll';
 import VisibilitySensor from 'react-visibility-sensor';
 
 import styles from './detailsCard.scss';
+import Loader from '../../components/loader/Loader.jsx';
+import Rating from '../../components/rating/Rating.jsx';
+
+const MAX_PRODUCTS = 10;
 
 const Products = ({ outfit }) => {
 	let index = 1;
 	const items = [];
-	let product = outfit['product_type' + index];
-	while (product) {
-		items.push(<Product key={index} product={product} />);
-		product = outfit['product_type' + (++index)];
+	for (let index = 1; index <= MAX_PRODUCTS; index++) {
+		const product = outfit['product_type' + index];
+		if (product) {
+			items.push(<Product key={index} product={product} />);
+		}
 	}
 	return <div className={styles['card__icons']}>{items}</div>;
 };
@@ -26,18 +31,34 @@ const Product = ({ product }) => (
 	</div>
 );
 
-const Card = ({ item, keyP, onVisible }) => {
+const Author = ({ outfit }) => {
+	if (outfit.is_source_alive) {
+		return (
+			<a target="_blank"
+				alt={outfit.source_name}
+				href={["https://www.instagram.com/"] + [outfit.source_name]}>
+				&#64;{outfit.source_name}
+			</a>
+		);
+	}
+	return (
+		<>{outfit.source_name}</>
+	)
+}
+
+const Card = ({ item, onVisible, onLike, onDislike }) => {
 	const onChange = (isVisible) => {
 		if (isVisible) {
-			onVisible(item.outfit.id);
+			onVisible(item.outfit.id, item.id);
 		}
 	};
-	return (<VisibilitySensor key={keyP} onChange={onChange}>
+	return (<VisibilitySensor key={item.id} onChange={onChange} >
 		<div className={styles.card}>
 			<div className={styles['card__img']}>
-				<img src={item.outfit.image.image_url}
+				<img src={item.outfit.image_url}
 					alt={item.description}
 				/>
+				<Rating item={item} onLike={onLike} onDislike={onDislike} />
 			</div>
 			<div className={styles['card__info']}>
 				<Products outfit={item.outfit} />
@@ -45,9 +66,8 @@ const Card = ({ item, keyP, onVisible }) => {
 				<div className={styles['card__text']}>
 					{item.description}
 				</div>
-				<div className={styles['card__author']}>Photo by <a target="_blank"
-					alt={item.outfit.image.source_name}
-					href={item.outfit.image.source_url}>&#64;{item.outfit.image.source_name}</a>
+				<div className={styles['card__author']}>Photo by&nbsp;
+				<Author outfit={item.outfit} />
 				</div>
 			</div>
 		</div>
@@ -55,43 +75,57 @@ const Card = ({ item, keyP, onVisible }) => {
 }
 
 
-const DetailsCard = ({ data, activeItem, singleResult, onClose }) => {
+const DetailsCard = ({ data,
+	activeItem,
+	onClose,
+	onLike,
+	onDislike,
+	loading,
+	outfitsLoader,
+	singleResult }) => {
+	let visibleSuggestionId = activeItem.id;
 
-	const onVisible = (id) => {
-		ReactGA.pageview('/' + id);
+	const onVisible = (outfitId, suggestionId) => {
+		visibleSuggestionId = suggestionId;
+		ReactGA.pageview('/' + outfitId);
 		ReactGA.event({
 			category: 'outfit',
 			action: 'view',
-			value: id
+			value: outfitId
 		});
 		history.replaceState('',
 			document.title,
-			window.location.pathname + window.location.search + '#' + id);
+			window.location.pathname + window.location.search + '#' + outfitId);
 	}
 
 	useEffect(() => {
-		onVisible(activeItem.outfit.id);
+		onVisible(activeItem.outfit.id, activeItem.id);
 		animateScroll.scrollToTop({
-			delay:0,
+			delay: 0,
 			duration: 0
 		});
 	}, []);
 
 	const close = () => {
 		history.replaceState('', document.title, window.location.pathname + window.location.search);
-		onClose();
+		onClose(visibleSuggestionId);
 	};
 
 	const index = data.findIndex((item) => item.id == activeItem.id);
 	const dataPart = data.slice(index);
 
 	return (
-		<>
-			{singleResult ? <></> : <div className={styles['close-icon']} onClick={close}></div>}
+		<div className={styles['details']}>
+			<div className={styles['close-icon']} onClick={close}></div>
 			<div className={styles['card-container']}>
-				{dataPart.map((item, key) => <Card item={item} keyP={key} onVisible={onVisible} />)}
+				{dataPart.map((item, key) => <Card
+					item={item}
+					onVisible={onVisible}
+					onLike={onLike}
+					onDislike={onDislike} />)}
 			</div>
-		</>
+			{!singleResult && <Loader active={loading} outfitsLoader={outfitsLoader} />}
+		</div>
 	);
 };
 

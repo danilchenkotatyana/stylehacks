@@ -10,14 +10,14 @@
 [class*="select__input-box"]{
 	width: 260px;
 }
-[class*="popup-overlay"] {
-	position: absolute !important;
-	top: 3rem !important;
-	left: auto !important;
-	@include breakpoint(laptop, max) {
-		top: 2rem !important;
-	}
-}
-[class*="popup-content"] {
-	//width: auto !important;
-}
+// [class*="popup-overlay"] {
+// 	position: absolute !important;
+// 	top: 3rem !important;
+// 	left: auto !important;
+// 	@include breakpoint(laptop, max) {
+// 		top: 2rem !important;
+// 	}
+// }
+// [class*="popup-content"] {
+// 	//width: auto !important;
+// }

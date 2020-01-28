@@ -1,12 +1,16 @@
 // Colors
 $white: #fff !default;
 $gray-100: #F6F6F8 !default;
+$gray-50: #FAF7F4 !default;
+$gray-150: #F6F6F8 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
-$gray-150: #F6F6F8 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-550: #808080 !default;
+$gray-600: #CEC6C3 !default;
+$gray-650: #CCC7B9 !default;
+$gray-700: #979797 !default;
 //$gray-600: #6c757d !default;
 //$gray-700: #495057 !default;
 //$gray-800: #343a40 !default;
@@ -18,6 +22,9 @@ $border-color: #E9E4D7;
 $shadow: rgba(0, 0, 0, 0.25) !default;
 $background-transparent: rgba(246,246,248,.9) !default;
 $inactive-color: rgba(58, 64, 71, 0.5) !default;
+$yellow: #FFF500 !default;
+$rose: #FA695C !default;
+
 
 
 // Typography
@@ -44,5 +51,5 @@ $font-weight-bold: 700 !default;
 $font-weight-base: $font-weight-normal !default;
 
 // Main Styles
-$body-bg: $white !default;
+$body-bg: $gray-50 !default;
 $text-color: $gray-900 !default;

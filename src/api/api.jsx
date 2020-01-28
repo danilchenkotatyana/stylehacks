@@ -56,3 +56,25 @@ export const setPreferences = async (preferences) => {
 		return {};
 	}
 }
+
+export const like = async (outfitId) => {
+	try {
+		const response = await fetch(
+			`/api/outfits/like/` + outfitId
+		);
+		return await response.json();
+	} catch (error) {
+		return {};
+	}
+}
+
+export const dislike = async (outfitId) => {
+	try {
+		const response = await fetch(
+			`/api/outfits/dislike/` + outfitId
+		);
+		return await response.json();
+	} catch (error) {
+		return {};
+	}
+}

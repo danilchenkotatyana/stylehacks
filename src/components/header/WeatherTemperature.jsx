@@ -32,7 +32,7 @@ const WeatherTemperature = ({ weather }) => {
 	return (
 		<div className={styles['header__weather-temperature']}>
 			{temperatureMax}&#47;{temperatureMin}&nbsp;&nbsp;
-			<span className={!celcius ? disabledStyle : ''} onClick={setScale('f')}>F</span>&#47;
+			<span className={!celcius ? disabledStyle : ''} onClick={setScale('f')}>F</span><span>&#47;</span>
 			<span className={celcius ? disabledStyle : ''} onClick={setScale('c')}>C</span>
 		</div>
 	);

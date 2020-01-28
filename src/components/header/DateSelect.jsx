@@ -11,16 +11,20 @@ const MAX_FORECAST_AVAILABLE = 5;
 
 const formatDate = (d) => {
 	if (!d) {
-		return 'Today';
+		return 'today';
 	}
 	const m = moment(d, 'YYYY-MM-DD');
 	if (m.isSame(moment(), 'days')) {
-		return 'Today';
+		return 'today';
 	}
-	return m.format('ddd, MMM Do');
+	if (m.isSame(moment().add(1, 'days'), 'days')) {
+		return 'tomorrow';
+	}
+	return m.format('\\o\\n MMM D, YYYY');
 }
+const calendarMessage = "We only have weather forecast for 5 days ahead for now.";
 
-const DateSelect = ({ date, onDateChange }) => {
+const DateSelect = ({ date, onDateChange, popupOpen, setPopupOpen, onDatePopupOpen }) => {
 
 	const today = moment();
 	const last = moment().add(MAX_FORECAST_AVAILABLE - 1, 'days');
@@ -28,8 +32,6 @@ const DateSelect = ({ date, onDateChange }) => {
 	const toMonth = moment().add(1, 'month').toDate();
 
 	const [label, setLabel] = useState(formatDate(date));
-
-	const [popupOpen, setPopupOpen] = useState(false);
 
 	const currentDate = date ? moment(date, 'YYYY-MM-DD').toDate() : new Date();
 
@@ -39,7 +41,7 @@ const DateSelect = ({ date, onDateChange }) => {
 			ReactGA.event({
 				category: 'date',
 				action: 'out-of-range'
-			});	
+			});
 			return;
 		}
 		setPopupOpen(false);
@@ -55,22 +57,28 @@ const DateSelect = ({ date, onDateChange }) => {
 	const selectStyle = styles['select__title'];
 	return (
 		<div className={styles['select']}>
-			<div className={selectStyle} onClick={() => { setPopupOpen(true) }}>
-				{label}
-				<div className={styles.arrow} />
-			</div>
+
 			<Popup
-				position={["top center", "bottom right", "bottom left"]}
+				position={["bottom right"]}
+				trigger={open => (
+					<div className={selectStyle} onClick={() => { setPopupOpen(true) }}>
+						{label}
+						<div className={styles.arrow} />
+					</div>
+				)}
 				open={popupOpen}
 				on="click"
+				onOpen={onDatePopupOpen}
 				onClose={onClose}
 				closeOnDocumentClick
 				mouseLeaveDelay={300}
 				mouseEnterDelay={0}
-				contentStyle={{ padding: "0px", border: "none" }}
+				contentStyle={{ padding: "0px", border: "none", background: "transparent" }}
 				arrow={false}
-				modal={false}
+				keepTooltipInside
 			>
+				<>
+					<div className={styles.message}>{calendarMessage}</div>
 					<DayPicker
 						selectedDays={[currentDate]}
 						onDayClick={onDayClick}
@@ -78,10 +86,10 @@ const DateSelect = ({ date, onDateChange }) => {
 						classNames={datePickerStyles}
 						showOutsideDays
 						disabledDays={[{ before: today.toDate(), after: last.toDate() }]}
-						onDayClick={onDayClick}
 						fromMonth={fromMonth}
 						toMonth={toMonth}
 					/>
+				</>
 			</Popup>
 		</div>);
 };

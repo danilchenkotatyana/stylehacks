@@ -1,8 +1,9 @@
 // A map of breakpoints.
 $breakpoints: (
+		smaller-mobile: 360px,
 		small-mobile: 460px,
 		mobile: 768px,
-		laptop: 1340px,
+		laptop: 1200px,
 		desktop: 1800px
 );
 //breakpoints
@@ -25,8 +26,6 @@ $breakpoints: (
 				@content
 			}
 		}
-
-		// If the breakpoint doesn't exist in the map.
 	} @else {
 		@if $direction == max {
 			@media (max-width: $breakpoint) {

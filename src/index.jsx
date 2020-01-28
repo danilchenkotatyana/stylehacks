@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 import App from "./app";
 
-ReactGA.initialize('UA-000000-01', {
+ReactGA.initialize('UA-136364242-2', {
 	//debug: true
 });
 ReactGA.pageview('/');

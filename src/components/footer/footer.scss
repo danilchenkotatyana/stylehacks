@@ -2,7 +2,7 @@
 @import "../../styles/partials/mixins";
 
 .footer {
-	background-color: $gray-100;
+	background-color: $gray-600;
 	color: $gray-900;
 	display: flex;
 	justify-content: space-evenly;
@@ -26,7 +26,7 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		width: 100px;
+		width: 180px;
 	}
 	&__second-line {
 		display: flex;
@@ -36,6 +36,12 @@
 	}
 	&__link {
 		cursor: pointer;
+		display: block;
+		color: $gray-900;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	&__instagram {
 		width: 30px;
@@ -44,6 +50,8 @@
 		background-size: contain;
 		cursor: pointer;
 		display: block;
+		text-indent: -100000px;
+		color: transparent;
 	}
 	&__facebook {
 		width: 30px;
@@ -52,5 +60,17 @@
 		background-size: contain;
 		cursor: pointer;
 		display: block;
+		text-indent: -100000px;
+		color: transparent;
+	}
+	&__google {
+		width: 30px;
+		height: 30px;
+		background: url("../../img/google-assistant.png") no-repeat center transparent;
+		background-size: contain;
+		cursor: pointer;
+		display: block;
+		text-indent: -100000px;
+		color: transparent;
 	}
 }

@@ -1,5 +1,16 @@
 @import '../../styles/partials/variables';
 @import "../../styles/partials/mixins";
+
+.details {
+	margin: auto;
+	max-width: 1200px;
+	@include breakpoint(desktop, max) {
+		max-width: 1020px;
+	}
+	@include breakpoint(laptop, max) {
+		max-width: 1000px;
+	}
+}
 .card-container {
 	//display: flex;
 	//flex-direction: column;
@@ -9,18 +20,21 @@
 	display: flex;
 	position: relative;
 	margin: 0 2rem;
-	padding: 2rem 0;
-	border-top: .5px solid $border-color;
+	padding: 2rem 0 5rem;
+	//border-top: .5px solid $border-color;
 	&:nth-child(1) {
 		border-top: none;
 	}
 	@include breakpoint(mobile, max) {
 		flex-direction: column;
+		padding: 0 0 1rem 0;
+		margin: 0 0 1rem 0;
 	}
 	&__img {
 		width: 50%;
 		object-fit: cover;
 		padding: 0 3rem 0 0;
+		position: relative;
 		img {
 			width: 100%;
 			vertical-align: bottom;
@@ -33,8 +47,9 @@
 	&__info {
 		width: 50%;
 		@include breakpoint(mobile, max) {
-			width: 100%;
+			width: auto;
 			padding-top: 1rem;
+			margin: 0 1rem;
 		}
 	}
 	&__text {
@@ -48,15 +63,18 @@
 			padding-top: 1rem;
 		}
 		@include breakpoint(small-mobile, max) {
-			font-size: $font-size-footer;
+			font-size: .85rem;
 		}
 	}
 	&__author {
 		padding-top: 3rem;
-		font-size: $font-size-middle;
+		font-size: $font-size-base;
 		@include breakpoint(mobile, max) {
-			font-size: $font-size-footer;
+			font-size: 1rem;
 			padding-top: 2rem;
+		}
+		@include breakpoint(small-mobile, max) {
+			font-size: .85rem;
 		}
 		a {
 			color: $gray-900;
@@ -113,34 +131,48 @@
 
 .close-icon {
 	position: sticky;
-	top: 1rem;
-	left: calc(100% - 3rem);
+	top: 13rem;
+	//margin-left: 1156px;
 	background-color: $shadow;
 	border-radius: 50%;
 	width: 42px;
 	height: 42px;
 	cursor: pointer;
 	transform: rotate(360deg);
-	z-index: 3;
-	@include breakpoint(mobile, max) {
-		right: 1.5rem;
+	z-index: 2;
+	//margin-top: 1rem;
+	margin-left: 1rem;
+    margin-bottom: -42px;
+	//transform: rotate(-136deg);
+	@include breakpoint(desktop, max) {
+		//margin-left: 978px;
 	}
+	@include breakpoint(laptop, max) {
+		//margin-left: 0;
+		//left: calc(100% - 3.5rem);
+	}
+	@include breakpoint(mobile, max) {
+		//top: auto;
+		//position: fixed;
+	}
+	
+
 	&:after,
 	&:before {
 		content: '';
-		width: 1px;
+		width: 2px;
 		height: 17px;
 		background-color: $white;
 		position: absolute;
 		transform: translate(-50%, -50%) rotate(45deg);
-		top: 50%;
+		top: 39%;
 		left: 50%;
 	}
 	&:after {
 		transform: translate(-50%, -50%) rotate(-45deg);
+		top: 64%;
 	}
 	&:hover {
-		transform: scale(1.05);
-		box-shadow: 0 4px 4px $shadow;
+		transform: rotate(360deg) scale(1.05);
 	}
 }

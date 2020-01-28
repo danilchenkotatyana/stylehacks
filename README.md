@@ -1,4 +1,4 @@
-# Follow link https://stylehacks.ai/
+Follow link https://stylehacks.ai/
 
 # React
 npm install

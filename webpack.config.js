@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 const SRC_DIR = __dirname + '/src';
@@ -72,13 +73,15 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: devMode ? '[name].css' : '[name].[hash].css',
 			chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
-		})
+		}),
+		new CompressionPlugin()
 	],
 	devServer: {
 		contentBase: DIST_DIR,
 		hot: true,
 		port: 9000,
 		disableHostCheck:true,
+		historyApiFallback: true,
 		proxy: {
 			'/api': {
 				target: 'http://127.0.0.1:9001',

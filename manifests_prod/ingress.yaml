@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: prod-web-ip
+spec:
+  tls:
+  - secretName: web-ssl
+  rules:
+  - host: stylehacks.ai
+    http:
+      paths:
+      - backend:
+          serviceName: web
+          servicePort: 8080

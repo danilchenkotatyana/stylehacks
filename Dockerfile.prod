@@ -1,0 +1,35 @@
+# Dockerfile extending the generic Node image with application files for a
+# single application.
+FROM gcr.io/google_appengine/nodejs
+# Check to see if the the version included in the base runtime satisfies
+# 8.x, if not then do an npm install of the latest available
+# version that satisfies it.
+RUN /usr/local/bin/install_node 8.x
+COPY . /app/
+RUN rm -rf client/node_modules client/src client/build client/package*.json client/*.config.js
+# You have to specify "--unsafe-perm" with npm install
+# when running as root.  Failing to do this can cause
+# install to appear to succeed even if a preinstall
+# script fails, and may have other adverse consequences
+# as well.
+# This command will also cat the npm-debug.log file after the
+# build, if it exists.
+RUN npm install --unsafe-perm || \
+  ((if [ -f npm-debug.log ]; then \
+      cat npm-debug.log; \
+    fi) && false)
+
+ENV port "8080"
+ENV production "true"
+ENV cookie_secret "tAsD3iq1iM1jFpgS"
+ENV session_secret "H74aG53wowKnJtwu"
+ENV log_level "debug"
+ENV log_file "stylehacks.log"
+ENV log_format "false"
+ENV outfits_per_page "10"
+ENV user_api_endpoint "http://user.app.stylehacks.ai/api/v1/"
+ENV weather_api_endpoint "http://weather.app.stylehacks.ai/api/v1/"
+ENV recommendation_api_endpoint "http://recommendation.app.stylehacks.ai/api/v1/"
+ENV history_api_endpoint "http://history.app.stylehacks.ai/api/v1/"
+
+CMD npm start

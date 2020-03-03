@@ -1,0 +1,105 @@
+@import '../../styles/partials/variables';
+@import "../../styles/partials/mixins";
+
+.rating {
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//width: calc(100% - 1rem);
+	@include breakpoint(mobile, max)  {
+		//width: calc(100% - .4rem);
+	}
+	.dislike_icon,
+	.like_icon {
+		color: $black;
+		border-radius: 50%;
+		width: 2.25rem;
+		height: 2.25rem;
+		line-height: 2.25rem;
+		text-align: center;
+		font-size: $font-size-middle;
+		position: relative;
+		margin: 0 .5rem;
+		cursor: pointer;
+		background: url(../../img/icon-like.svg) no-repeat $white center;
+		background-size: 65%;
+		&.active,
+		&:hover,
+		&:active {
+			background-color: $gray-600;
+			box-shadow: 0 0 8px 1px $black;
+		}
+	}
+	.dislike_icon {
+		background-image: url(../../img/icon-dislike.svg);
+	}
+}
+[class^="card"] {
+	.rating {
+		width: 100%;
+		margin-top: 1rem;
+		justify-content: flex-end;
+		position: relative;
+		bottom: auto;
+		@include breakpoint(mobile, max) {
+		}
+		.dislike_icon,
+		.like_icon {
+			border: 1px solid $gray-650;
+			color: $gray-650;
+			fill: $gray-650;
+			stroke: $gray-650;
+			&.active {
+				color: $black;
+			}
+		}
+		.like_icon {
+			background-image: url(../../img/icon-like-card.svg);
+			&:hover,
+			&.active,
+			&:active {
+				background-image: url(../../img/icon-like-card-active.svg);
+			}
+		}
+		.dislike_icon {
+			background-image: url(../../img/icon-dislike-card.svg);
+			&:hover,
+			&.active,
+			&:active {
+				background-image: url(../../img/icon-dislike-card-active.svg);
+			}
+		}
+	}
+}
+
+.hidden {
+	visibility: hidden;
+}
+[class^="gallery__column"] {
+	[class^="images"] {
+		.rating {
+			display: none;
+			&.active {
+				display: flex;
+			}
+		}
+		&:hover {
+			.rating {
+				display: flex;
+				@include breakpoint(mobile, max)  {
+					display: none;
+				}
+			}
+		}
+	}
+	.rating {
+		@include breakpoint(mobile, max)  {
+			display: none;
+		}
+	}
+}
+

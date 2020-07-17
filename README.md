@@ -1,5 +1,5 @@
 # stylehacks
-follow https://stylehacks.ai/
+follow https://assistant.stylehacks.ai/
 
 npm install
 npm start
